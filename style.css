@@ -198,6 +198,13 @@
     height: 100%;
 }
 
+@media (max-width: 362px) {
+    .nav-logo {
+        width: 120px;
+        height: 30px;
+    }
+}
+
 @media (max-width: 575.98px) {
 
     /* PARALAX */
