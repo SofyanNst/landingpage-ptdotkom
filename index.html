@@ -46,11 +46,11 @@
         </div>
       </nav>
 
-      <!-- <div class="video-background">
-        <video id="coverBackground" controls autoplay>
+      <div class="video-background">
+        <video id="coverBackground" autoplay loop>
           <source src="assets/cover_x264.mp4" type="video/mp4">
         </video>
-      </div> -->
+      </div>
 
       <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -60,9 +60,9 @@
         </div>
       </div> -->
 
-      <div class="embed-responsive embed-responsive-16by9">
+      <!-- <div class="embed-responsive embed-responsive-16by9">
         <video src="assets/cover_x264.mp4" autoplay loop class="d-block w-100"></video>
-      </div>
+      </div> -->
     </header>
 
     <main>
@@ -186,6 +186,14 @@
         $('nav').toggleClass('scrolled',$(this).scrollTop()> 200);
       });
     </script>
+    <script>
+      var x = document.getElementById("coverBackground");
+
+      function enableAutoplay() { 
+        x.autoplay = true;
+        x.load();
+      } 
+  </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
