@@ -198,7 +198,7 @@
     height: 100%;
 }
 
-@media (max-width: 575.98px) {
+@media (min-width: 360px) and (max-width: 575.98px) {
 
     /* PARALAX */
     .paralax {
@@ -229,8 +229,8 @@
 
     /* HEADER */
     .logo {
-        width: 140px;
-        height: 50px;
+        width: 130px;
+        height: 40px;
     }
 
     /* COVER */
