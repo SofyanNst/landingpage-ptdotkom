@@ -7,6 +7,32 @@
     behavior: smooth;
 }
 
+.paralax {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)),
+        url(assets/paralax.png);
+    min-height: 300px;
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: -7px;
+}
+
+.paralax2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)),
+        url(assets/paralax.png);
+    min-height: 300px;
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 7px;
+}
+
 /* NAVBAR */
 .nav-logo {
     width: 241px;
@@ -99,7 +125,6 @@
     font-size: 30px;
     margin-top: 20px;
     color: #fff;
-    text-align: center;
 }
 
 /* MAIN SECTION 3 */
@@ -171,4 +196,170 @@
     background-color: #0A2C59;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 575.98px) {
+
+    /* PARALAX */
+    .paralax {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)),
+            url(src/paralax.png);
+        min-height: 150px;
+        position: relative;
+        opacity: 0.90;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-top: -7px;
+    }
+
+    .paralax2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)),
+            url(src/paralax.png);
+        min-height: 150px;
+        position: relative;
+        opacity: 0.90;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+
+    /* HEADER */
+    .logo {
+        width: 140px;
+        height: 50px;
+    }
+
+    /* COVER */
+    .video-background video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    /* MAIN SECTION 1 */
+    .main-section1-left h1 {
+        font-weight: 800;
+        font-style: italic;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .main-section1-left p {
+        font-weight: 200;
+        font-size: 20px;
+        margin-top: 30px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .laptop {
+        width: 50%;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    /* MAIN SECTION 2 */
+    .main-section2-right h1 {
+        font-weight: 800;
+        font-style: italic;
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .main-section2-right p {
+        position: absolute;
+        font-weight: 200;
+        font-size: 20px;
+        margin-top: 20px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .main-section2-left {
+        margin-top: 50px;
+    }
+
+    .main-section2-right {
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+
+    /* MAIN SECTION 3 */
+    .main-section3 {
+        background-color: #0A2C59;
+        width: 100%;
+        height: 100%;
+    }
+
+    .section3-logo-panduanterkini {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .section3-logo-smartschool {
+        width: 45%;
+        margin-top: 10px;
+    }
+
+    .main-section3-center h2 {
+        font-weight: 700;
+        font-style: italic;
+        text-align: center;
+        color: #fff;
+        margin-top: 50px;
+    }
+
+    .main-section3-center p {
+        font-weight: 400;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .main-section3-center li {
+        font-weight: 300;
+        color: #fff;
+        font-size: 12px;
+        margin-left: 40px;
+    }
+
+    .contact-us {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .company {
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .contact {
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .address {
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+        font-size: 12px;
+    }
 }
