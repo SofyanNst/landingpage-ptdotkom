@@ -33,6 +33,21 @@
     margin-bottom: 7px;
 }
 
+
+/* BACKGROUND */
+.bg-darkblue {
+    background-color: #01071a;
+    width: 100%;
+}
+
+.bg-lightblue {
+    background-color: #0a2c599f;
+}
+
+.bg-gradient-darkblue {
+    background: radial-gradient(50% 50% at 50% 50%, #162768 0%, rgba(2, 9, 35, 0.94) 100%);
+}
+
 /* NAVBAR */
 .nav-logo {
     width: 241px;
@@ -62,7 +77,20 @@
     object-fit: cover;
 }
 
-/* MAIN SECTION 1 */
+/* HEADER ABOUT US - SERVICE*/
+.header {
+    background: url('assets/header.png');
+    width: 100%;
+    height: 35vh;
+}
+
+.header-title h1 {
+    margin-top: 100px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* INDEX SECTION 1 */
 .main-section1 {
     background: radial-gradient(50% 50% at 50% 50%, #162768 0%, rgba(2, 9, 35, 0.94) 100%);
     width: 100%;
@@ -95,7 +123,7 @@
     width: 40%;
 }
 
-/* MAIN SECTION 2 */
+/* INDEX SECTION 2 */
 .main-section2 {
     background: radial-gradient(50% 50% at 50% 50%, #162768 0%, rgba(2, 9, 35, 0.94) 100%);
     width: 100%;
@@ -127,7 +155,7 @@
     color: #fff;
 }
 
-/* MAIN SECTION 3 */
+/* INDEX SECTION 3 */
 .sction3 {
     background-color: #0A2C59;
 }
@@ -198,6 +226,41 @@
     height: 100%;
 }
 
+/* SERVICE */
+.service-item p {
+    font-weight: 200;
+}
+
+/* ARTICLE WRITING */
+.article h2 {
+    color: #fff;
+}
+
+.article p {
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.card-body a {
+    transition: 0.5s;
+}
+
+.card-body a:hover {
+    letter-spacing: 6px;
+    transition: 0.5s;
+}
+
+.item-img-article-writing img {
+    height: 100%;
+    width: 100%;
+}
+
+.item-article-writing {
+    font-weight: 200;
+}
+
+/* MOBILE RESPONSIVE */
 @media (max-width: 362px) {
     .nav-logo {
         width: 120px;
@@ -210,8 +273,8 @@
     /* PARALAX */
     .paralax {
         background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)),
-            url(src/paralax.png);
-        min-height: 150px;
+            url(assets/paralax.png);
+        min-height: 200px;
         position: relative;
         opacity: 0.90;
         background-position: center;
@@ -223,8 +286,8 @@
 
     .paralax2 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)),
-            url(src/paralax.png);
-        min-height: 150px;
+            url(assets/paralax.png);
+        min-height: 200px;
         position: relative;
         opacity: 0.90;
         background-position: center;
@@ -233,11 +296,15 @@
         background-attachment: fixed;
     }
 
-
-    /* HEADER */
+    /* NAVBAR */
     .nav-logo {
         width: 140px;
         height: 50px;
+    }
+
+    /* HEADER ABOUT US - SERVICE*/
+    .header-title-aboutus {
+        margin-top: 40px;
     }
 
     /* COVER */
@@ -257,7 +324,7 @@
         font-size: 50px;
         color: #fff;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .main-section1-left p {
@@ -266,6 +333,10 @@
         margin-top: 30px;
         color: #fff;
         text-align: center;
+    }
+
+    .main-section1-right {
+        margin-top: 20px;
     }
 
     .laptop {
@@ -307,6 +378,7 @@
         background-color: #0A2C59;
         width: 100%;
         height: 100%;
+        margin-top: -1vh;
     }
 
     .section3-logo-panduanterkini {
@@ -368,5 +440,9 @@
         text-align: center;
         font-weight: 300;
         font-size: 12px;
+    }
+
+    footer {
+        margin-top: -1vh;
     }
 }
